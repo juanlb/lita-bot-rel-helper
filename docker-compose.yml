@@ -1,0 +1,15 @@
+version: '3'
+services:
+  lita:
+    image: juanlb/lita-bot-relatient:latest
+    restart: always
+    env_file: '.env'
+    links:
+      - redis
+    ports: 
+      - 8080:8080
+    volumes: 
+      - /tmp:/tmp
+  redis:
+    image: redis
+    restart: always
