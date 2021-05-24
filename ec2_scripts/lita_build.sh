@@ -30,6 +30,6 @@ KEY_ENV="KEY_$ENV"
 KEY=${!KEY_ENV}
 
 # push
-ENV_DECRYPTION_KEY=$KEY bundle exec rake "docker:push[$ENV,ENV_DECRYPTION_KEY]" > /tmp/build_docker.log
+ENV_DECRYPTION_KEY=$KEY bundle exec rake "docker:push[$ENV,ENV_DECRYPTION_KEY]" &> /tmp/build_docker.log
 
 tail -1 /tmp/build_docker.log > /tmp/build_result.log

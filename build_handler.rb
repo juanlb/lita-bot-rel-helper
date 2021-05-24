@@ -147,7 +147,7 @@ module Lita
       end
 
       def start_build_process
-        file_content = "#!/bin/bash\n/home/ubuntu/lita_build.sh #{params[:env]} #{params[:branch]}\n"
+        file_content = "#!/bin/bash\n#{ENV['LITA_BUILD_SCRIPT']} #{params[:env]} #{params[:branch]}\n"
         File.write(EXEC_BUILD_FILE, file_content)
         `chmod +x #{EXEC_BUILD_FILE}`
       end
