@@ -12,8 +12,7 @@ Lita.configure do |config|
   config.robot.adapter = :slack
   # config.robot.adapter = :shell
 
-  # config.adapters.slack.token = ENV['SLACK_TOKEN']
-  config.adapters.slack.token = 'xoxb-2072130431075-2077652889746-kgHRTh0TlyrFc81cwkq33Ll9'
+  config.adapters.slack.token = ENV['SLACK_TOKEN']
   
   # The locale code for the language to use.
   # config.robot.locale = :en

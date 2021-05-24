@@ -1,31 +1,7 @@
 #!/bin/bash
 
-(sleep 2 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 4 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 6 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 8 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 10 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 12 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 14 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 16 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 18 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 20 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 22 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 24 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 26 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 28 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 30 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 32 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 34 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 36 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 38 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 40 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 42 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 44 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 46 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 48 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 50 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 52 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 54 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 56 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
-(sleep 58 && /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh) &
+while :
+do
+  /home/ubuntu/lita_bot/check_for_build_script_from_lita.sh
+  sleep 2
+done
