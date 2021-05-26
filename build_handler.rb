@@ -74,13 +74,13 @@ module Lita
         # url = config.top_clicks_all_time_url
 
         if status == :init
-          if response.message.body.strip.downcase.split(' ').size != 3
+          if response.message.body.strip.split(' ').size != 3
             invalid_params(response)
           elsif not ['production', 'beta', 'demo'].include?(response.message.body.strip.split(' ')[1])
             response.reply(" *#{response.message.body.strip.split(' ')[1]}* is not a valid environment name: *[prodction, beta, demo]*")
             invalid_params(response)
           else
-            cmd, env, branch = response.message.body.strip.downcase.split(' ')
+            cmd, env, branch = response.message.body.strip.split(' ')
             status_wait_confirmation(env, branch, response.message.user.name)
             response.reply("I'm going to build a `#{env}` docker image from `#{branch}` branch, Ok? ( *yes* / *no* )")
           end
