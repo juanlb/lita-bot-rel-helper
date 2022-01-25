@@ -26,6 +26,9 @@ echo 'Git pull'
 git pull
 
 # bundle
+bundle install
+
+# env keys
 KEY_ENV="KEY_$ENV"
 KEY=${!KEY_ENV}
 
