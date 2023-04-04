@@ -2,9 +2,10 @@ source "https://rubygems.org"
 
 gem "lita"
 
-gem "lita-slack"
+gem "lita-slack", git: "https://github.com/juanlb/lita-slack", branch: "updated_connect_procedure"
+# gem "lita-slack", git: "https://github.com/clustermarket/lita-slack", branch: "master"
 
-
+# gem 'pry'
 # Uncomment to use the HipChat adapter
 # gem "lita-hipchat"
 
